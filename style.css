@@ -195,7 +195,7 @@ a{
     height: 80px;
     display: flex;
     align-items: center;
-    box-shadow: rgb(0, 0, 0, 0.08) 0px 3px 8px;
+    box-shadow: rgb(0, 0, 0, 0.08) 0 3px 8px;
     /* rgb is a function used to define a color using the RGB color model.
      The RGB color model represents colors by specifying the intensity of red, green,
      and blue components.
@@ -271,6 +271,7 @@ of the browser window.
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     margin-top: 3.2rem;
+    margin-bottom: 2.5rem;
 }
 .lg-title{
     margin: 1.4rem 0;
@@ -288,11 +289,13 @@ of the browser window.
     min-height: 80vh;
     display: flex;
     align-items: center;
+
 }
 .section-one-l img{
     max-width: 545px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 1.2rem;
 }
 .section-one-r{
     margin-top: 4rem;
@@ -309,6 +312,123 @@ of the browser window.
 .section-one-r .btn-group{
     margin-top: 3rem;
 }
+/* section two */
+.section-two{
+    padding: 64px 0;
+    margin-top: 1.2rem;
+}
+.section-two .section-items{
+    display: flex;
+    gap: 2rem;
+}
+
+.section-two .section-item{
+    max-width: 350px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-two .section-item-icon{
+    margin: 1rem 0;
+}
+.section-two .section-item-icon img{
+    width: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-two .section-item-title{
+    color: var(--clr-blue-dark);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.section-two .text{
+    margin: 0.9rem 0;
+}
+
+/* footer */
+
+.footer{
+    padding: 3rem 0;
+}
+
+.footer-content p {
+    color: var(--clr-grey);
+}
+.footer-content p span {
+    color: var(--clr-white);
+}
+@media screen and (min-width: 992px) {
+    .section-one-content {
+        display: grid;
+        column-gap: 3rem;
+        /* Imagine you have a grid with multiple columns, and you want to create some
+        space or a gap between each column.
+
+In this case, column-gap: 3rem; is like telling the computer,
+ "Hey, I want to have a gap of 3 rem between each column in my grid.*/
+        grid-template-columns: repeat(2, 1fr);
+        /* Imagine you have a grid where you want to put things in two columns.
+         You want both columns to be the same size and take up an equal amount of space.
+
+So, grid-template-columns: repeat(2, 1fr); is like telling the computer,
+"Hey, I want two columns in my grid, and I want both columns to be the same size."
+
+The repeat() part means you're going to repeat something a certain number of times.
+In this case, you want to repeat the column size pattern twice.
+
+The 1fr part is like saying, "Make each column take up one part of the available space."
+ It's like dividing the space into two equal parts.
+
+By using grid-template-columns: repeat(2, 1fr);, you're telling the computer to create
+a grid with two columns that are the same size and take up an equal amount of space.
+This helps in organizing and arranging things in a neat way on a webpage,
+just like how you would divide a paper into two equal parts to draw or write in each
+section.
+*/
+    }
+    .section-one-r{
+        text-align: left;
+    }
+    .section-two .section-items{
+        grid-template-columns: repeat(3, 1fr);
+        /* Imagine you have a special box, and you want to divide it into three equal parts.
+
+The grid-template-columns: repeat(3, 1fr); is like telling a magic fairy to
+split that box into three columns, and each column will be the same size,
+just like how you divide a cake into three equal pieces so everyone gets a fair share!
+
+The grid-template-columns part is just saying that we are going to
+ decide how the columns inside the box should look.
+
+The repeat() part means we want to repeat something a few times,
+and in this case, we want to repeat the size of the columns three times.
+
+And finally, the 1fr part is like saying, "Make each column the same
+size and take up one part of the available space." It's like making sure
+ each piece of cake is equally delicious!
+
+So, with grid-template-columns: repeat(3, 1fr);, you're telling the magic
+ fairy to create a special box with three columns that are all the same size.
+  This helps you organize things neatly inside the box, just like how you arrange
+   toys in three neat rows so you can see them all and play with each one!
+*/
+    }
+    .section-two .section-item{
+        text-align: left;
+    }
+    .section-two .section-item-icon img{
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
