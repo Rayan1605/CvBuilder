@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- So here we are creating a navbar -->
 <nav class = "navbar bg-white">
   <div class="container">
     <div class = "navbar-content">
@@ -17,6 +18,7 @@
         <a href = "index.html" class = "navbar-brand">
           <img src = "assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
           <span class = "navbar-brand-text">build <span>resume.</span>
+            </span>
         </a>
         <button type = "button" class = "navbar-toggler-btn">
           <div class = "bars">
@@ -29,18 +31,18 @@
     </div>
   </div>
 </nav>
-
+<!-- Creating a section , This will hold the about yourself-->
 <section id = "about-sc" class = "">
   <div class = "container">
     <div class = "about-cnt">
       <form action="" class="cv-form" id = "cv-form">
         <div class = "cv-form-blk">
           <div class = "cv-form-row-title">
-            <h3>about section</h3>
+            <h3>About section</h3>
           </div>
           <div class = "cv-form-row cv-form-row-about">
             <div class = "cols-3">
-              <div class = "form-elem">
+              <div class = "form-elem">  <!-- Creating a div for every section like name to offer the same style  -->
                 <label for = "" class = "form-label">First Name</label>
                 <input name = "firstname" type = "text" class = "form-control firstname" id = "" onkeyup="generateCV()" placeholder="e.g. John">
                 <span class="form-text"></span>
@@ -93,10 +95,10 @@
             </div>
           </div>
         </div>
-
+  <!-- Making another one -->
         <div class="cv-form-blk">
           <div class = "cv-form-row-title">
-            <h3>achievements</h3>
+            <h3>Achievements</h3>
           </div>
 
           <div class = "row-separator repeater">
@@ -289,7 +291,7 @@
     </div>
   </div>
 </section>
-
+ <!-- This is how the cv will look like -->
 <section id = "preview-sc" class = "print_area">
   <div class = "container">
     <div class = "preview-cnt">
@@ -378,9 +380,14 @@
 
 
 
-<!-- jquery cdn -->
+<!-- jquery cdn  jQuery is a popular JavaScript library that simplifies HTML document
+ traversing, event handling, animating, and Ajax interactions. By including this script,
+ you can use the jQuery library's functionality in your web application.-->
 <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-<!-- jquery repeater cdn -->
+<!-- jquery repeater cdn The jQuery Repeater is a plugin that enables the creation of
+repeating form elements or sets of HTML markup. It allows you to create dynamic and
+interactive forms where users can add or remove sections, such as repeating fields or
+blocks of content.-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js" integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- custom js -->
 <script src = "assets/js/script.js"></script>
