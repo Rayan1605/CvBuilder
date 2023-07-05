@@ -130,10 +130,185 @@ a{
     padding: 0 1.6rem;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+/* bars button */
+.bars{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content*/
+    height: 16.5px;
+    width: 25px;
+}
+.bars .bar{
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-blue);
+    transition: var(--transition);
+}
+
+.bars:hover .bar{
+    background-color: var(--clr-dark); /* The var() function provides a way to store and
+    reuse values throughout your CSS code. By defining variables at the root level (:root),*/
+}
+/* buttons */
+.btn{
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 1.4rem 1.6rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+.btn-primary{
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-blue);
+    transition: var(--transition);
+}
+
+.btn-primary:hover{
+    background-color: transparent;
+    color: var(--clr-dark);
+    border-color: var(--clr-grey);
+}
+
+.btn-secondary{
+    background-color: transparent;
+    color: var(--clr-dark);
+    border: 1px solid var(--clr-grey);
+    transition: var(--transition);
+}
+
+.btn-secondary:hover{
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border-color: var(--clr-blue);
+}
+
+.btn-group button:first-child, .btn-group a:first-child{
+    margin-right: 1rem!important;
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(0, 0, 0, 0.08) 0px 3px 8px;
+    /* rgb is a function used to define a color using the RGB color model.
+     The RGB color model represents colors by specifying the intensity of red, green,
+     and blue components.
+
+ represents the color of the box shadow. In this case, it is an RGB color with values 0, 0, 0 representing black, and the fourth value 0.08
+ represents the opacity of the shadow, where 1 is fully opaque and 0 is fully transparent. In this case, the shadow is slightly transparent.
+
+0px 3px 8px specifies the horizontal offset, vertical offset, and blur radius of the box shadow, respectively.
+
+0px indicates there is no horizontal offset, meaning the shadow is directly below the element.
+3px represents a vertical offset of 3 pixels, pushing the shadow slightly downwards.
+8px is the blur radius of the shadow, making it appear softer and more diffused.
 
 
+      */
+}
+.navbar .container{
+    width: 100%;
+}
 
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+}
+.navbar-brand-text{
+    color: var(--clr-dark);
+    font-weight: 600;
+}
+.navbar-brand-text span{
+    color: var(--clr-blue);
+}
+.navbar-brand-icon{
+    width: 25px;
+    margin-right: 6px;
+    opacity: 0.8; /* opacity is a property that controls the transparency or
+    opacity of an element and its contents.
+    It specifies the degree to which the element is see-through or opaque.*/
+}
+.brand-and-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    min-height: calc(100vh - 80px);
+ /* min-height: calc(100vh - 80px); is a property-value pair that sets the minimum height
+  of an element to a calculated value.
 
+Let's break it down:
+
+min-height is a CSS property used to specify the minimum height that an element should
+ have. It ensures that the element will be at least as tall as the specified value.
+calc() is a CSS function that allows you to perform calculations to determine a value.
+ In this case, it is used to calculate the desired height.
+100vh refers to 100% of the viewport height. The viewport height represents the height
+of the browser window.
+- 80px subtracts 80px from the viewport height.
+*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-content{
+    max-width: 740px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header-content img{
+    max-width: 760px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-top: 3.2rem;
+}
+.lg-title{
+    margin: 1.4rem 0;
+    font-size: 37px;
+    line-height: 1.4;
+    color: var(--clr-dark);
+}
+.header-content p{
+    margin-bottom: 2.6rem;
+    line-height: 1.6;
+}
+/* section one */
+.section-one{
+    padding: 64px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.section-one-l img{
+    max-width: 545px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-one-r{
+    margin-top: 4rem;
+}
+
+.section-one .btn-group{
+    margin-top: 2rem;
+}
+.section-one-r{
+    max-width: 545px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-one-r .btn-group{
+    margin-top: 3rem;
+}
 
 
 
