@@ -237,8 +237,17 @@ const generateCV = () => {
     displayCV(userData);
 }
 
+function previewCV(){
+    let Reader = new FileReader();
+    Reader.readAsDataURL(imageElem.files[0]);
+     Reader.onload = function(ofEvent){
+    imageDsp.src = ofEvent.target.result;
+    }
 
-
+     function printCV() {
+        window.print(); // print the page on button click
+    }
+}
 
 
 
