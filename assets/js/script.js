@@ -62,7 +62,12 @@ let nameDsp = document.getElementById('fullname_dsp'),
     educationsDsp = document.getElementById('educations_dsp'),
     experiencesDsp = document.getElementById('experiences_dsp');
 
-const fetchValues = (attrs, ...nodeLists) => { // is a JavaScript function declaration that uses the rest parameter syntax ...nodeLists to represent an indefinite number of arguments as an array. This function takes in two parameters: attrs and ...nodeLists. The first parameter attrs is a single value, while the second parameter ...nodeLists represents an array of values. This syntax allows you to pass any number of arguments to the function, which will be collected into an array and assigned to the nodeLists variable.
+const fetchValues = (attrs, ...nodeLists) => { // is a JavaScript function declaration
+    // that uses the rest parameter syntax ...nodeLists to represent an indefinite number of
+    // arguments as an array. This function takes in two parameters: attrs and ...nodeLists.
+    // The first parameter attrs is a single value, while the second parameter ...nodeLists
+    // represents an array of values. This syntax allows you to pass any number of arguments to the
+    // function, which will be collected into an array and assigned to the nodeLists variable.
 
 }
 
