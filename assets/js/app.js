@@ -177,13 +177,13 @@ function validateFormData(elem, elemType, elemName){
 
     // checking for phone number
     if(elemType === validType.PHONENO){
-        if(!phoneRegex.test(elem.value) || elem.value.trim().length == 0) addErrMsg(elem, elemName);
+        if(!phoneRegex.test(elem.value) || elem.value.trim().length === 0) addErrMsg(elem, elemName);
         else removeErrMsg(elem);
     }
 
     // checking for only empty
     if(elemType === validType.ANY){
-        if(elem.value.trim().length == 0) addErrMsg(elem, elemName);
+        if(elem.value.trim().length === 0) addErrMsg(elem, elemName);
         else removeErrMsg(elem);
     }
 }
