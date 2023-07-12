@@ -68,9 +68,49 @@ const fetchValues = (attrs, ...nodeLists) => { // is a JavaScript function decla
     // The first parameter attrs is a single value, while the second parameter ...nodeLists
     // represents an array of values. This syntax allows you to pass any number of arguments to the
     // function, which will be collected into an array and assigned to the nodeLists variable.
+let elemsAttrCount = nodeLists.length;
+let elemsDataCount = nodeLists[0].length;
+let tempDataArr = [];
+
+    for(let i = 0; i < elemsDataCount; i++){
+        let dataObj = {}; // creating an empty object to fill the data
+        // second loop fetches the data for each repeaters value or attributes
+        for(let j = 0; j < elemsAttrsCount; j++){
+            // setting the key name for the object and fill it with data
+            dataObj[`${attrs[j]}`] = nodeLists[j][i].value;
+        }
+        tempDataArr.push(dataObj);
+    }
+
+    return tempDataArr;
 
 }
+const getUserInputs = () => {
+    // achivements
+    let achievementsTitleElem = document.querySelectorAll('.achieve_title'),
+        achievementsDescriptionElem = document.querySelectorAll('.achieve_description');
+    let expTitleElem = document.querySelectorAll('.exp_title'),
+        expOrganizationElem = document.querySelectorAll('.exp_organization'),
+        expLocationElem = document.querySelectorAll('.exp_location'),
+        expStartDateElem = document.querySelectorAll('.exp_start_date'),
+        expEndDateElem = document.querySelectorAll('.exp_end_date'),
+        expDescriptionElem = document.querySelectorAll('.exp_description');
 
+    // education
+    let eduSchoolElem = document.querySelectorAll('.edu_school'),
+        eduDegreeElem = document.querySelectorAll('.edu_degree'),
+        eduCityElem = document.querySelectorAll('.edu_city'),
+        eduStartDateElem = document.querySelectorAll('.edu_start_date'),
+        eduGraduationDateElem = document.querySelectorAll('.edu_graduation_date'),
+        eduDescriptionElem = document.querySelectorAll('.edu_description');
+
+    let projTitleElem = document.querySelectorAll('.proj_title'),
+        projLinkElem = document.querySelectorAll('.proj_link'),
+        projDescriptionElem = document.querySelectorAll('.proj_description');
+
+    let skillElem = document.querySelectorAll('.skill');
+
+}
 
 
 
