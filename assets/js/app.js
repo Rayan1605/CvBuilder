@@ -238,6 +238,10 @@ const generateCV = () => {
 }
 
 function previewCV(){
+    //, the previewCV() function creates a FileReader object,
+    // reads the selected image file using readAsDataURL(), and
+    // sets the resulting data URL as the source of an image element (imageDsp).
+    // This allows the user to preview the selected image before uploading it.
     let Reader = new FileReader();
     Reader.readAsDataURL(imageElem.files[0]);
     Reader.onload = function(ofEvent){
@@ -245,6 +249,11 @@ function previewCV(){
     }
 
     function printCV() {
-        window.print(); // print the page on button click
+        window.print(); // . This line calls the print() method of the window object,
+        // which opens the print dialog box for the current page.
+
+       // When the button associated with the printCV() function is clicked,
+        // this function will be executed, resulting in the print dialog box appearing,
+        // allowing the user to print the current webpage.
     }
 }
