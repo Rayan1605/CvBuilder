@@ -163,6 +163,7 @@ function validateFormData(elem, elemType, elemName){
         if(!strRegex.test(elem.value) || elem.value.trim().length === 0) addErrMsg(elem, elemName);
         else removeErrMsg(elem);
     }
+    
     // checking for only text string
     if(elemType === validType.TEXT_EMP){
         if(!strRegex.test(elem.value)) addErrMsg(elem, elemName);
